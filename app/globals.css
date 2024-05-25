@@ -33,7 +33,7 @@ nav{
     @apply font-medium text-xl text-secondary
 }
 .service-card{
-    @apply p-6 bg-accent rounded-t-3xl rounded-bl-3xl
+    @apply p-6 bg-accent rounded-t-3xl rounded-bl-3xl shadow-sm shadow-slate-300
 }
 .service-card:hover {
     @apply bg-gradient-to-bl text-accent from-primary to-secondary transition-all duration-500

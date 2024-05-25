@@ -6,7 +6,7 @@ const Header = () => {
   const [scrollBg, setScrollBg] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 70) {
+    if (window.scrollY > 0) {
       setScrollBg(true);
     } else {
       setScrollBg(false);

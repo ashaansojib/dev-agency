@@ -3,7 +3,7 @@ import { FaChartBar } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <section className="bg-slate-100 py-10">
+    <section className="bg-slate-50 py-10">
       <div className="my-container grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <div>
           <h2 className="title">Start to End Web Development Services..</h2>
