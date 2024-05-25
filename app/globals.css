@@ -2,32 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.my-container{
+    @apply max-w-[1130px] mx-auto px-2
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+nav{
+    @apply font-medium
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hero-btn{
+    @apply px-6 py-2 border border-accent hover:bg-accent hover:text-primary inline-block  hover:tracking-wider duration-500 transition-all rounded-full uppercase
+}
+.my-btn{
+    @apply px-6 py-2 border border-blue-500 hover:bg-primary hover:text-accent inline-block  hover:tracking-wider duration-300 transition rounded-full uppercase
+}
+.nav-link{
+    @apply inline-block px-4 py-2 hover:border-b-2 border-primary uppercase
+}
+.hero-container{
+    @apply relative bg-primary bg-opacity-70 text-accent h-[550px]
+}
+.title{
+    @apply text-2xl font-semibold
+}
+.hero-bg{
+    object-fit: cover;
+    z-index: -5;
+    border-bottom-right-radius: 70%;
+}
+.secondary-title{
+    @apply font-medium text-xl text-secondary
+}
+.service-card{
+    @apply p-6 bg-accent rounded-t-3xl rounded-bl-3xl
+}
+.service-card:hover {
+    @apply bg-gradient-to-bl text-accent from-primary to-secondary transition-all duration-500
 }
