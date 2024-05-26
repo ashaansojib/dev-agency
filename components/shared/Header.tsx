@@ -20,9 +20,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full top-0 z-10 transition-transform duration-500 ease-in-out ${
-        scrollBg ? "bg-accent sticky text-primary transform-none" : "absolute text-accent"
-      }`}
+      className={`w-full top-0 z-50 ${scrollBg ? 'bg-accent sticky transition-all' : 'fixed text-accent'}`}
     >
       <div className="my-container h-[70px] flex justify-between items-center">
         <h1 className="font-semibold text-xl">Dev.co</h1>
