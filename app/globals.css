@@ -40,3 +40,6 @@ nav {
 .team-card {
   @apply flex items-center text-accent border p-4 bg-gradient-to-l from-primary to-secondary relative cursor-pointer;
 }
+.footer-link{
+    @apply hover:tracking-wider transition-all duration-500 text-sm
+}

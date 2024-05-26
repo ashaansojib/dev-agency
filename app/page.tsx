@@ -4,6 +4,7 @@ import Services from "@/components/home/Services";
 import Featured from "@/components/home/Featured";
 import TeamSection from "@/components/home/TeamSection";
 import Blogs from "@/components/home/Blogs";
+import Footer from "@/components/shared/Footer";
 export default function Home() {
   return (
     <main>
@@ -13,6 +14,7 @@ export default function Home() {
       <Featured />
       <TeamSection />
       <Blogs />
+      <Footer />
     </main>
   );
 }
