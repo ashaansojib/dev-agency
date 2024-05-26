@@ -2,39 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.my-container{
-    @apply max-w-[1130px] mx-auto px-2
+.my-container {
+  @apply max-w-[1130px] mx-auto px-2;
 }
-nav{
-    @apply font-medium
+nav {
+  @apply font-medium;
 }
-.hero-btn{
-    @apply px-6 py-2 border border-accent hover:bg-accent hover:text-primary inline-block  hover:tracking-wider duration-500 transition-all rounded-full uppercase
+.hero-btn {
+  @apply px-6 py-2 border border-accent hover:bg-accent hover:text-primary inline-block  hover:tracking-wider duration-500 transition-all rounded-full uppercase;
 }
-.my-btn{
-    @apply px-6 py-2 border border-blue-500 hover:bg-primary hover:text-accent inline-block  hover:tracking-wider duration-500 transition-all rounded-full uppercase
+.my-btn {
+  @apply px-6 py-2 border border-blue-500 hover:bg-primary hover:text-accent inline-block  hover:tracking-wider duration-500 transition-all rounded-full uppercase;
 }
-.nav-link{
-    @apply inline-block px-4 py-2 hover:border-b-2 border-primary uppercase
+.nav-link {
+  @apply inline-block px-4 py-2 hover:border-b-2 border-primary uppercase;
 }
-.hero-container{
-    @apply relative bg-primary bg-opacity-70 text-accent h-[550px]
+.hero-container {
+  @apply relative bg-primary bg-opacity-70 text-accent h-[550px];
 }
-.title{
-    @apply text-2xl font-semibold
+.title {
+  @apply text-2xl font-semibold;
 }
-.hero-bg{
-    object-fit: cover;
-    z-index: -5;
-    border-bottom-right-radius: 70%;
+.hero-bg {
+  object-fit: cover;
+  z-index: -5;
+  border-bottom-right-radius: 70%;
 }
-.secondary-title{
-    @apply font-medium text-xl text-secondary
+.secondary-title {
+  @apply font-medium text-xl text-secondary;
 }
-.service-card{
-    @apply p-6 bg-accent rounded-t-3xl rounded-bl-3xl shadow-sm shadow-slate-300
+.service-card {
+  @apply p-6 bg-accent rounded-t-3xl rounded-bl-3xl shadow-sm shadow-slate-300;
 }
 .service-card:hover {
-    @apply bg-gradient-to-bl text-accent from-primary to-secondary transition-all duration-500
+  @apply bg-gradient-to-bl text-accent from-primary to-secondary transition-all duration-500;
+}
+.team-card {
+  @apply flex items-center text-accent border p-4 bg-gradient-to-l from-primary to-secondary relative cursor-pointer;
 }

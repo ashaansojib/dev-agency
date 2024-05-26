@@ -11,25 +11,28 @@ const Featured = () => {
                     <Image src={bgImg} alt='featured' />
                 </div>
                 <div>
-                    <p className='flex gap-3 items-center'>
+                    <div className='flex gap-3 items-center'>
                     <FaCheckDouble className='text-blue-500' />
                     <h2 className='secondary-title'>Design and UX that ensures your app will be loved</h2>
-                    </p>
+                    </div>
                     <p className='py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit ipsa qui delectus labore iusto aliquam nobis harum, illum quibusdam, sed, officiis natus quaerat ratione facere nihil quisquam accusantium consequatur.</p>
-                    <p className='flex gap-3 items-center'>
+
+                    <div className='flex gap-3 items-center'>
                     <FaCheckDouble className='text-blue-500' />
                     <h2 className='secondary-title'>Enterprise-grade development secures reliability and quality</h2>
-                    </p>
+                    </div>
                     <p className='py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit ipsa qui delectus labore iusto aliquam nobis harum, illum quibusdam, sed, officiis natus quaerat ratione facere nihil quisquam accusantium consequatur.</p>
-                    <p className='flex gap-3 items-center'>
+
+                    <div className='flex gap-3 items-center'>
                     <FaCheckDouble className='text-blue-500' />
                     <h2 className='secondary-title'>A proven and tested process guarantees your success</h2>
-                    </p>
+                    </div>
                     <p className='py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit ipsa qui delectus labore iusto aliquam nobis harum, illum quibusdam, sed, officiis natus quaerat ratione facere nihil quisquam accusantium consequatur.</p>
-                    <p className='flex gap-3 items-center'>
+
+                    <div className='flex gap-3 items-center'>
                     <FaCheckDouble className='text-blue-500' />
                     <h2 className='secondary-title'>Start-to-end app development agency</h2>
-                    </p>
+                    </div>
                     <p className='py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit ipsa qui delectus labore iusto aliquam nobis harum, illum quibusdam, sed, officiis natus quaerat ratione facere nihil quisquam accusantium consequatur.</p>
                 </div>
             </div>
