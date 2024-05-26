@@ -3,6 +3,7 @@ import Header from "@/components/shared/Header";
 import Services from "@/components/home/Services";
 import Featured from "@/components/home/Featured";
 import TeamSection from "@/components/home/TeamSection";
+import Blogs from "@/components/home/Blogs";
 export default function Home() {
   return (
     <main>
@@ -11,6 +12,7 @@ export default function Home() {
       <Services />
       <Featured />
       <TeamSection />
+      <Blogs />
     </main>
   );
 }
