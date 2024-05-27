@@ -17,6 +17,7 @@ bun dev
 ## Installed Packages
 * Nextjs + TypeScript
 * npm install react-icons --save
+* npm i aos
 * 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
