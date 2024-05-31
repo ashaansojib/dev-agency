@@ -21,7 +21,7 @@ const Services = () => {
           <div className="flex flex-col gap-4">
             <div className="service-card">
               <FaChartBar className="text-3xl my-2" />
-              <h2 className="secondary-title">Full Stack Developer 1</h2>
+              <h2 className="secondary-title">Full Stack App</h2>
               <p className="py-2">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Placeat consequatur aliquid reiciendis obc
@@ -29,7 +29,7 @@ const Services = () => {
             </div>
             <div className="service-card">
               <FaChartBar className="text-3xl my-2" />
-              <h2 className="secondary-title">Frontend Development 2</h2>
+              <h2 className="secondary-title">Frontend Development</h2>
               <p className="py-2">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Placeat consequatur aliquid reiciendis obc
@@ -39,7 +39,7 @@ const Services = () => {
           <div className="flex flex-col gap-4">
             <div className="service-card bg-gradient-to-bl text-accent from-primary to-secondary transition-all duration-500">
               <FaChartBar className="text-3xl my-2" />
-              <h2 className="secondary-title">Full Stack Developer 3</h2>
+              <h2 className="secondary-title">Backend Development</h2>
               <p className="py-2">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Placeat consequatur aliquid reiciendis obc
@@ -47,7 +47,7 @@ const Services = () => {
             </div>
             <div className="service-card">
               <FaChartBar className="text-3xl my-2" />
-              <h2 className="secondary-title">Frontend Development 4</h2>
+              <h2 className="secondary-title">UI UX Desing</h2>
               <p className="py-2">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Placeat consequatur aliquid reiciendis obc
