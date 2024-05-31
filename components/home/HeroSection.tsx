@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="hero-container">
       <Image className="hero-bg" src={background} fill={true} alt="bgc" />
-      <div className="my-container pt-40 grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-4">
+      <div className="my-container md:pt-40 py-20 grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-4">
         <div>
           <h2 className="title">
             We are commited to supply super fast web Development services.
@@ -18,7 +18,7 @@ const HeroSection = () => {
           </p>
           <button className="hero-btn">All Works</button>
         </div>
-        <div className="flex justify-end">
+        <div className="md:flex justify-end">
           <div className="grid grid-cols-3 md:grid-cols-5 justify-between items-center gap-3">
             <Image src="/js.png" alt="logos" width={50} height={50} />
             <Image src="/react.png" alt="logos" width={50} height={50} />

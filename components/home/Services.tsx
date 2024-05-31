@@ -17,7 +17,7 @@ const Services = () => {
           </p>
           <button className="my-btn">Services</button>
         </div>
-        <div className="md:space-y-4 flex gap-4 justify-between items-center">
+        <div className="md:space-y-4 md:flex gap-4 justify-between items-center">
           <div className="flex flex-col gap-4">
             <div className="service-card">
               <FaChartBar className="text-3xl my-2" />
