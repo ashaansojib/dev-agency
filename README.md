@@ -18,6 +18,7 @@ bun dev
 * Nextjs + TypeScript
 * npm install react-icons --save
 * npm i aos
+* npm install swiper
 * 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

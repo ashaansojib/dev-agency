@@ -1,78 +1,89 @@
+"use client"
 import Image from "next/image";
-import React from "react";
-import myImg from "../../public/mypp.png";
-import { FaFacebookF, FaGitSquare, FaYoutube } from "react-icons/fa";
-import { FaGitAlt, FaGithub, FaWhatsapp } from "react-icons/fa6";
+import React, { useState } from "react";
+import myImg from "../../public/pp1.png";
+import imgNoman from "../../public/pp2.png";
+import { FaArrowLeft, FaArrowRight, FaQuoteLeft } from "react-icons/fa6";
 
 const TeamSection = () => {
+  const [activeSlider, setActiveSlider] = useState<number>(1);
+
+  const handleSliderChange = (sliderNumber: number) => {
+    setActiveSlider(sliderNumber);
+  };
+
   return (
     <section className="my-container py-4">
       <div className="max-w-screen-sm mx-auto text-center">
         <h2 className="title">We Are</h2>
         <p>
-          We are two frnds of team for your solution. We can make anyhting for
-          your products..
+          We are two friends of team for your solution. We can make anything for
+          your products.
         </p>
       </div>
-      <div className="py-6 grid grid-cols-1 md:grid-cols-2 justify-between gap-4">
-        <div className="team-card">
-          <Image className="h-[250px] w-[180px]" src={myImg} alt="developer" />
-          <div>
-            <h2 className="text-2xl">Full Stack Web Developer</h2>
-            <p>- Ashaduzzaman Sojib</p>
-            <p className="text-gray-200 py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              quia facere consequuntur nihil voluptatum quaerat optio quos
-              doloremque dolor a! Maiores officia officiis maxime ducimus culpa
-              rerum omnis tenetur. Nobis.
-            </p>
-          </div>
-          <div className="developer-info">
-            <h2 className="secondary-title">Expertise in:</h2>
-            <div>
-              <p>
-                JavaScript, Python, ReactJS, NextJS, TailwindCss, NodeJS,
-                ExpressJS, MongoDB, MySql, Docar, Github...
+      {activeSlider === 1 && (
+        <div className="py-6 max-w-screen-md mx-auto">
+          <div className="team-card">
+            <Image
+              width={250}
+              height={350}
+              layout="responsive"
+              src={myImg}
+              alt="developer"
+            />
+            <div className="text-center md:text-left">
+              <FaQuoteLeft className="text-3xl text-secondary" />
+              <p className="py-2">
+                In his web developer portfolio, the French front-end developer and
+                graphic designer Charles Bruyerre displays a unique style. The
+                site’s interactive background gives it a modern and playful look,
+                while the domain name helps to reinforce his brand.
               </p>
-              <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione suscipit, placeat necessitatibus, blanditiis nisi eveniet debitis illum quae aliquid.</p>
-              <div className="pt-4 justify-end flex gap-2">
-                <FaGithub className="text-3xl" />
-                <FaWhatsapp className="text-3xl" />
-                <FaFacebookF className="text-3xl" />
-                <FaYoutube className="text-3xl" />
-              </div>
+              <h2 className="text-primary font-semibold">Web Developer (MERN)</h2>
+              <p className="font-medium">- Ashaduzzaman Sojib</p>
+              <p>- Freelancer Full Time</p>
             </div>
           </div>
         </div>
-        <div className="team-card">
-          <Image className="h-[250px] w-[200px]" src={myImg} alt="developer" />
-          <div>
-            <h2 className="text-2xl">Full Stack Web Developer</h2>
-            <p>- Ashaduzzaman Sojib</p>
-            <p className="text-gray-300 py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              quia facere consequuntur nihil voluptatum quaerat optio quos
-              doloremque dolor a! Maiores officia officiis maxime ducimus culpa
-              rerum omnis tenetur. Nobis.
-            </p>
-          </div>
-          <div className="developer-info">
-            <h2 className="secondary-title">Expertise in:</h2>
-            <div>
-              <p>
-                JavaScript, Python, ReactJS, NextJS, TailwindCss, NodeJS,
-                ExpressJS, MongoDB, MySql, Docar, Github...
+      )}
+      {activeSlider === 2 && (
+        <div className="py-6 max-w-screen-md mx-auto">
+          <div className="team-card">
+            <Image
+              width={250}
+              height={350}
+              layout="responsive"
+              src={imgNoman}
+              alt="developer"
+            />
+            <div className="text-center md:text-left">
+              <FaQuoteLeft className="text-3xl text-secondary" />
+              <p className="py-2">
+                In his web developer portfolio, the French front-end developer and
+                graphic designer Charles Bruyerre displays a unique style. The
+                site’s interactive background gives it a modern and playful look,
+                while the domain name helps to reinforce his brand.
               </p>
-              <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione suscipit, placeat necessitatibus, blanditiis nisi eveniet debitis illum quae aliquid.</p>
-              <div className="pt-4 justify-end flex gap-2">
-                <FaGithub className="text-3xl" />
-                <FaWhatsapp className="text-3xl" />
-                <FaFacebookF className="text-3xl" />
-                <FaYoutube className="text-3xl" />
-              </div>
+              <h2 className="text-primary font-semibold">Web Developer (Full Stack)</h2>
+              <p className="font-medium">- Md. Neamul Haque</p>
+              <p>Developer at - Innovation IT Pvt.</p>
             </div>
           </div>
         </div>
+      )}
+      <div className="flex justify-center my-4">
+        <button 
+          onClick={() => handleSliderChange(1)}
+          className={`mx-2 px-4 py-2 rounded-full ${activeSlider === 1 ? 'bg-primary text-white' : 'bg-gray-200'}`}
+        >
+          <FaArrowRight />
+        </button>
+        <button 
+          onClick={() => handleSliderChange(2)}
+          className={`mx-2 px-4 rounded-full py-2 ${activeSlider === 2 ? 'bg-primary text-white' : 'bg-gray-200'}`}
+        >
+          <FaArrowLeft />
+        </button>
       </div>
     </section>
   );

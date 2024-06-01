@@ -38,13 +38,10 @@ nav {
   @apply bg-gradient-to-bl text-accent from-primary to-secondary transition-all duration-500;
 }
 .team-card {
-  @apply flex items-center text-accent border p-4 bg-gradient-to-l from-primary to-secondary relative cursor-pointer;
+  @apply md:flex justify-between gap-5 items-center cursor-pointer bg-slate-100;
 }
-.developer-info{
-    @apply absolute top-0 right-0 h-full w-2/3 bg-gradient-to-tr from-primary to-secondary p-3 transition-opacity duration-500 ease-in-out opacity-0
-}
-.team-card:hover .developer-info{
-    @apply opacity-100
+.team-card img{
+  @apply rounded-l-3xl
 }
 .footer-link{
     @apply hover:tracking-wider transition-all duration-500 text-sm
