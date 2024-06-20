@@ -4,6 +4,7 @@ import bgImg from "../../public/home-mockup.png"
 import { FaCheckDouble } from 'react-icons/fa6';
 
 const Featured = () => {
+    
     return (
         <section className='py-20 my-10 bg-gray-100 rounded-tl-full'>
             <div className="my-container grid grid-cols-1 md:grid-cols-2 justify-between">

@@ -1,17 +1,26 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import background from "@/public/hero.jpg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const HeroSection = () => {
+  useGSAP(()=>{
+    gsap.from("#title", {y: -400, duration: 3})
+    gsap.from("#desc", {y: -400, duration: 3, delay: 1})
+  },[])
   return (
     <section className="hero-container">
       <Image className="hero-bg" src={background} fill={true} alt="bgc" />
-      <div className="my-container md:pt-40 py-20 grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-4">
+      <div
+        className="my-container md:pt-40 py-20 grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-4"
+      >
         <div>
-          <h2 className="title">
+          <h2 id="title" className="title">
             We are commited to supply super fast web Development services.
           </h2>
-          <p className="py-6">
+          <p id="desc" className="py-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
             aliquam autem quibusdam asperiores? Fugiat sit consequatur
             recusandae laboriosam temporibus voluptate.

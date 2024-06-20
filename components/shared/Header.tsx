@@ -1,7 +1,9 @@
 "use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaBars, FaXbox, FaXmark } from "react-icons/fa6";
+import { FaBars, FaXmark } from "react-icons/fa6";
 
 const Header = () => {
   const [scrollBg, setScrollBg] = useState(false);
@@ -18,10 +20,15 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // gsap for nav animation
+  useGSAP(()=>{
+    gsap.from("#menu", {x:300, duration:2})
+  },[])
   // handle mobile menu
   const menuItem = (
     <>
-      <ul className="flex-col md:flex-row flex justify-between">
+      <ul id="menu" className="flex-col md:flex-row flex justify-between">
         <li>
           <Link className="nav-link" href="/">
             Home
@@ -60,7 +67,7 @@ const Header = () => {
     >
       <div className="my-container flex justify-between items-center relative">
         <span
-          className="md:hidden block"
+          className="md:hidden block cursor-pointer"
           onClick={() => setMobileMenu(!mobileMenu)}
         >
           {mobileMenu ? (

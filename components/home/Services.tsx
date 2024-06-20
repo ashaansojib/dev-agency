@@ -1,11 +1,12 @@
-import React from "react";
 import { FaChartBar } from "react-icons/fa";
-
 const Services = () => {
   return (
     <section className="bg-slate-50 py-10">
-      <div className="my-container grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-        <div>
+      <div
+        id="smooth-wrapper"
+        className="my-container grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
+      >
+        <div id="smooth-content">
           <h2 className="title">Start to End Web Development Services..</h2>
           <p className="py-6 tracking-wider">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
@@ -13,7 +14,8 @@ const Services = () => {
             consectetur adipisicing elit. Laboriosam, mollitia?
           </p>
           <p className="py-6 tracking-wider">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam...
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Laboriosam...
           </p>
           <button className="my-btn">Services</button>
         </div>

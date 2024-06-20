@@ -19,6 +19,7 @@ bun dev
 * npm install react-icons --save
 * npm i aos
 * npm install swiper
+* npm install @gsap/react
 * 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
