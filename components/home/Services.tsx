@@ -6,7 +6,7 @@ const Services = () => {
         id="smooth-wrapper"
         className="my-container grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
       >
-        <div id="smooth-content">
+        <div data-aos="fade-left" data-aos-duration="3000" id="smooth-content">
           <h2 className="title">Start to End Web Development Services..</h2>
           <p className="py-6 tracking-wider">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
@@ -20,7 +20,7 @@ const Services = () => {
           <button className="my-btn">Services</button>
         </div>
         <div className="md:space-y-4 md:flex gap-4 justify-between items-center">
-          <div className="flex flex-col gap-4">
+          <div data-aos="fade-down" data-aos-duration="2000" className="flex flex-col gap-4">
             <div className="service-card">
               <FaChartBar className="text-3xl my-2" />
               <h2 className="secondary-title">Full Stack App</h2>
@@ -38,7 +38,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
+          <div data-aos="fade-right" data-aos-duration="2000" className="flex flex-col gap-4">
             <div className="service-card bg-gradient-to-bl text-accent from-primary to-secondary transition-all duration-500">
               <FaChartBar className="text-3xl my-2" />
               <h2 className="secondary-title">Backend Development</h2>

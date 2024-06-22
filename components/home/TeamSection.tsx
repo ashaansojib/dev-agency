@@ -22,7 +22,7 @@ const TeamSection = () => {
         </p>
       </div>
       {activeSlider === 1 && (
-        <div className="py-6 max-w-screen-md mx-auto">
+        <div data-aos="fade-right" data-aos-duration="2000" className="py-6 max-w-screen-md mx-auto">
           <div className="team-card">
             <Image
               width={250}
@@ -47,7 +47,7 @@ const TeamSection = () => {
         </div>
       )}
       {activeSlider === 2 && (
-        <div className="py-6 max-w-screen-md mx-auto">
+        <div data-aos="fade-left" data-aos-duration="2000" className="py-6 max-w-screen-md mx-auto">
           <div className="team-card">
             <Image
               width={250}

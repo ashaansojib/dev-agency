@@ -8,10 +8,10 @@ const Featured = () => {
     return (
         <section className='py-20 my-10 bg-gray-100 rounded-tl-full'>
             <div className="my-container grid grid-cols-1 md:grid-cols-2 justify-between">
-                <div>
+                <div data-aos="fade-right" data-aos-duration="2000">
                     <Image src={bgImg} alt='featured' />
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="3000">
                     <div className='flex gap-3 items-center'>
                     <FaCheckDouble className='text-blue-500' />
                     <h2 className='secondary-title'>Design and UX that ensures your app will be loved</h2>

@@ -5,7 +5,7 @@ import { FaAngleRight, FaArrowLeft } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-slate-100">
-      <div className="my-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 py-10">
+      <div data-aos="fade-up" data-aos-duration="3000" className="my-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 py-10">
         <div className="lg:col-span-2">
           <h1 className="font-semibold text-xl">Dev.co</h1>
           <p className="text-secondary py-6">

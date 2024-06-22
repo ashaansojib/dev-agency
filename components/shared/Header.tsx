@@ -1,6 +1,3 @@
-"use client";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
@@ -20,11 +17,6 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // gsap for nav animation
-  useGSAP(()=>{
-    gsap.from("#menu", {x:300, duration:2})
-  },[])
   // handle mobile menu
   const menuItem = (
     <>
@@ -76,8 +68,8 @@ const Header = () => {
             <FaBars className="text-2xl" />
           )}
         </span>
-        <h1 className="font-semibold text-xl">Dev.co</h1>
-        <nav className="flex gap-4 items-center justify-between">
+        <h1 data-aos="fade-right" data-aos-duration="2000" className="font-semibold text-xl">Dev.co</h1>
+        <nav data-aos="fade-top" data-aos-duration="2000" className="flex gap-4 items-center justify-between">
           <div className="hidden md:block">{menuItem}</div>
           <Link className={`btn ${scrollBg ? "my-btn" : "hero-btn"}`} href="/">
             Contact
